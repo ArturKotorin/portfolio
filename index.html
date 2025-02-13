@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио Артура Которина — Frontend-разработчика" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Artur Kotorin | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <span>Артур</span>
+          </div>
+          <ul class="nav-links">
+            <li class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+              <a href="home">Home</a>
+            </li>
+            <li class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <a href="#about">About</a>
+              </li>
+            <li class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- Кнопка для открытия мобильного меню -->
+          <button class="hamburg" aria-label="Открыть навигацию" id="hamburgBtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+          <ul class="dropdown-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button class="cancel" aria-label="Закрыть навигацию" id="cancelBtn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Секция Hero -->
+      <section class="hero" id="home">
+        <div class="main-container">
+          <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="main.jpg" alt="Основное изображение портфолио" />
+          </div>
+          <div class="content">
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+              Привет, я <span>Артур Которин</span>
+            </h1>
+            <h3 class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+              Я — <span class="typewriter-text"></span>
+            </h3>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+              Я увлечён созданием современных веб-приложений с использованием HTML, CSS, JS и React.
+              Мой опыт, полученный в Яндекс Практикуме и на реальных проектах, позволяет мне
+              реализовывать качественные и адаптивные интерфейсы. Присоединяйтесь ко мне в мире
+              веб-разработки и инноваций!
+            </p>
+            <div class="social-links">
+              <a href="https://github.com/ArturKotorin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" aria-label="Профиль GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Обо мне" -->
+      <section class="about" id="about">
+        <div class="content">
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1200"><span>Обо мне</span></h2>
+          <div class="about-details">
+            <div class="about-left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+              <img src="main.jpg" alt="Портрет Артура" />
+            </div>
+            <div class="about-right">
+              <h3 class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                Программирование — моя страсть
+              </h3>
+              <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                Мотивированный Junior Frontend-разработчик с опытом разработки современных веб-приложений
+                на React и TypeScript. Стремлюсь применять полученные знания на практике, развивать навыки и
+                вносить вклад в создание качественных пользовательских интерфейсов. Готов к обучению и
+                решению сложных задач в команде.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Мои навыки" -->
+      <section class="skills" id="skills">
+        <div class="content">
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1200">
+            <span>Мои навыки</span>
+          </h2>
+          <!-- Flex-контейнер для списка технологий и карточки "ЯПомогаю" -->
+          <div class="skills-details">
+            <div class="skills-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+              <p>
+                • Основные технологии: HTML, CSS, JavaScript (ES6+), TypeScript<br />
+                • Фреймворки и библиотеки: React, React Router<br />
+                • Инструменты: Webpack, Babel, ESLint, Prettier, Git, GitHub<br />
+                • Тестирование: Jest, React Testing Library<br />
+                • Дополнительно: REST API, адаптивная и кросс-браузерная верстка
+              </p>
+            </div>
+            <!-- Кликабельная карточка проекта "ЯПомогаю" -->
+            <a href="https://github.com/ya-pomogau/frontend" target="_blank" class="project-feature" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+              <div class="project-card feature-card">
+                <h4>ЯПомогаю</h4>
+                <p><strong>GitHub:</strong> ya-pomogau/frontend</p>
+                <p>
+                  Командный проект, разработанный в рамках обучения.<br />
+                  Разработал функциональные компоненты на React.<br />
+                  Организовал взаимодействие компонентов с использованием пропсов и контекста.<br />
+                  Участвовал в командных обсуждениях и код-ревью.
+                </p>
+              </div>
+            </a>
+          </div>
+      
+          <!-- Контейнер с дополнительными карточками проектов -->
+          <div class="projects-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <div class="project-card">
+              <h4>mesto-project-ff</h4>
+              <p><strong>Описание:</strong> Социальная платформа для обмена фотографиями с возможностью редактирования профиля и добавления карточек.</p>
+              <p><strong>Стек:</strong> HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="project-card">
+              <h4>web-larek-frontend</h4>
+              <p><strong>Описание:</strong> Интернет-магазин с функционалом добавления товаров в корзину и оформления заказов.</p>
+              <p><strong>Стек:</strong> HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="project-card">
+              <h4>blog-customizer</h4>
+              <p><strong>Описание:</strong> Приложение для настройки и кастомизации блога, включая выбор темы и управление контентом.</p>
+              <p><strong>Стек:</strong> HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="project-card">
+              <h4>stellar-burgers</h4>
+              <p><strong>Описание:</strong> Приложение для заказа бургеров с возможностью сборки бургера и отслеживания заказов.</p>
+              <p><strong>Стек:</strong> HTML, CSS, JavaScript, React, Redux, WebSocket</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Свяжитесь со мной" -->
+      <section class="contact" id="contact">
+        <div class="content">
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1500"><span>Свяжитесь со мной</span></h2>
+          <div class="contact-text">
+            <h3 class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+              Есть подходящие проекты?
+            </h3>
+            <p>
+              С огромным удовольствием и полной отдачей приступлю к выполнению поставленной задачи.
+            </p>
+            <div class="contact-button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                <button id="contactBtn">Напиши мне</button>
+            </div>
+            <!-- Модальное окно для контактов -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" id="modalClose">&times;</span>
+                        <p>Номер телефона: 8 (987)-423-64-54</p>
+                        <p>Почта: <a href="mailto:kotorinartur@gmail.com">kotorinartur@gmail.com</a></p>
+                        <p>Telegram: @KotArchy</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <span>Created by ArturKotorin</span>
+      </div>
+    </footer>
+
+    <!-- Подключение AOS и внешнего скрипта -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
